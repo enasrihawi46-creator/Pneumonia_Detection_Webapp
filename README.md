@@ -12,7 +12,7 @@ https://drive.google.com/file/d/1O1OXGqADn0IdSOiLdUH-7fCpTBAnq_xw/view?usp=shari
 ##  التقنيات المستخدمة:
 * **Python & Flask:** لبناء الموقع.
 * **TensorFlow & Keras:** لتشغيل موديل التعلم العميق (Deep Learning).
-* **ReportLab:** لإنشاء تقارير الـ PDF.
+* **ReportLab:** لإنشاء تقارير  PDF.
 
 ##  طريقة التشغيل:
 1. قم بتثبيت المكتبات اللازمة.
