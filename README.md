@@ -15,6 +15,6 @@ https://drive.google.com/file/d/1O1OXGqADn0IdSOiLdUH-7fCpTBAnq_xw/view?usp=shari
 * **ReportLab:** لإنشاء تقارير الـ PDF.
 
 ##  طريقة التشغيل:
-1. قم بتثبيت المكتبات: `pip install -r requirements.txt`.
+1. قم بتثبيت المكتبات اللازمة.
 2. شغل ملف `app.py`.
 3. افتح المتصفح على الرابط `http://127.0.0.1:5000`.
