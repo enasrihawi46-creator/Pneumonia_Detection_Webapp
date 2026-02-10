@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/lg.png') }}">
+
+    <title>LUNGO</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="nav-right">
+             <div class="nav-right"> Pneumonia Detection</div>
+        </div>
+
+        <ul class="nav-center">
+            <li><a href="/">الرئيسية</a></li>
+            <li><a href="/upload">رفع الصورة</a></li>
+            <li><a href="/about">عن المشروع</a></li>
+        </ul>
+
+        <div class="nav-left">
+            <span class="brand-name"> LUNGO</span>
+            <img src="/static/images/cc.png" class="lung-logo" alt="logo">
+        </div>
+
+    </nav>
+
+    <header class="hero">
+        <h1>نظام الكشف عن الالتهاب الرئوي باستخدام التعلم العميق</h1>
+        <p>قم برفع صورة أشعة للصدر ودع الخوارزمية تقوم بتحليلها وتحديد الإصابات المحتملة</p>
+        <a href="/upload" class="btn-main">ابدأ الآن</a>
+    </header>
+
+    <section class="features-section">
+        <div class="container">
+            <h2>ما الذي يميز نظامنا؟</h2>
+            <div class="features-box">
+                <div class="feature-card">
+                    <h3>⚡ سرعة التحليل</h3>
+                    <p>يقوم النظام بتحليل صورة الأشعة خلال ثوانٍ فقط</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🧠 خوارزميات متقدمة</h3>
+                    <p>يعتمد على شبكات CNN العميقة المدربة على آلاف الصور</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📈 دقة عالية</h3>
+                    <p>مصمم لتوفير نتائج موثوقة تساعد في دعم التشخيص الطبي</p>
+                </div>
+            </div>
+
+            <h2 class="steps-title">كيف يعمل النظام؟</h2>
+            <div class="steps-box">
+                <div class="step-card">1️⃣ ارفع صورة أشعة الصدر</div>
+                <div class="step-card">2️⃣ يقوم النموذج بتحليل الصورة</div>
+                <div class="step-card">3️⃣ تحصل على النتيجة خلال ثوانٍ</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/lg.png') }}">
+
+    <title>LUNGO</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="nav-right">
+             <div class="nav-right">Pneumonia Detection</div>
+        </div>
+
+        <ul class="nav-center">
+            <li><a href="/">الرئيسية</a></li>
+            <li><a href="/upload">رفع الصورة</a></li>
+            <li><a href="/about">عن المشروع</a></li>
+        </ul>
+
+        <div class="nav-left">
+            <span class="brand-name"> LUNGO</span>
+            <img src="/static/images/cc.png" class="lung-logo" alt="logo">
+        </div>
+
+    </nav>
+
+
+    <div class="container">
+    <h2>نتيجة تحليل الأشعة السينية</h2>
+
+    <div class="result-box">
+        <div class="result-content">
+
+            <div class="image-section">
+                <img src="{{ image_url }}" class="preview-img" alt="Uploaded X-ray">
+                <p class="uploaded-time">تم التحليل: الآن</p>
+            </div>
+            
+            <div class="data-section">
+                
+                <p class="analysis-label">تشخيص الذكاء الاصطناعي:</p>
+                
+                <div class="status-display {{ status_class }}">
+                    {{ prediction }}
+                </div>
+
+                <div class="confidence-section">
+                    <p class="confidence-label">نسبة الثقة:</p>
+                    <div class="confidence-bar-wrapper">
+                        <div class="confidence-bar" style="width: {{ probability ~ '%' }}"></div>
+                    </div>
+                    <span class="probability-text">{{ probability }}%</span>
+                </div>
+                
+                <p class="disclaimer">
+                    ⚠️ *إخلاء مسؤولية*<br> هذه الأداة مخصصة للدراسة ولا تغني عن رأي الطبيب المختص.
+                </p>
+            </div>
+        </div>
+        
+        <a href="/upload" class="btn-main new-analysis-btn">تحليل صورة أخرى</a>
+        <a href="/download_report" class="btn-main report-btn">
+            تحميل التقرير PDF
+        </a>
+    </div>
+</div>
+</body>
+</html>
+
